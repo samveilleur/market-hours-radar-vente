@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Market Hours Radar — à vendre — 4 500 €</title>
+<style>
+  :root{color-scheme:dark}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:#05080f;
+    color:#dce7f2;
+    font-family:"Segoe UI",system-ui,-apple-system,sans-serif;
+    line-height:1.6;
+    padding:32px 20px;
+  }
+  .wrap{max-width:820px;margin:0 auto;}
+  header{text-align:center;margin-bottom:40px;padding-bottom:24px;border-bottom:1px solid #1d3050;}
+  .kicker{color:#ffc247;font-family:"Consolas",monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;}
+  h1{font-size:34px;margin:8px 0 6px;letter-spacing:-0.02em;}
+  .price{font-size:22px;color:#5dffa0;margin-top:6px;}
+  .price small{font-size:14px;color:#8296b0;font-weight:normal;}
+  .demo{margin:26px 0;text-align:center;}
+  .demo a{
+    display:inline-flex;align-items:center;gap:12px;
+    background:linear-gradient(135deg,rgba(56,225,255,.22),rgba(93,255,160,.18));
+    border:1px solid rgba(56,225,255,.45);color:#eafcff;
+    padding:12px 20px;border-radius:11px;text-decoration:none;font-weight:600;font-size:15px;
+  }
+  .demo a:hover{box-shadow:0 0 22px -4px rgba(56,225,255,.5);}
+  .qr{margin-top:14px;}
+  .qr img{width:160px;height:160px;border-radius:8px;background:#070c17;padding:4px;border:1px solid #1d3050;}
+  .qr p{font-size:12px;color:#8296b0;margin-top:6px;}
+  section{margin:34px 0;}
+  h2{font-size:20px;color:#9be8ff;margin-bottom:12px;display:flex;align-items:center;gap:8px;}
+  h2 span{width:6px;height:22px;background:#5dffa0;border-radius:3px;}
+  ul{color:#b9c6d4;padding-left:20px;}
+  li{margin:6px 0;}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:10px;}
+  @media(max-width:600px){.grid{grid-template-columns:1fr;}}
+  .card{border:1px solid #1d3050;border-radius:12px;padding:18px;background:#0b1322;}
+  .card h3{font-size:15px;margin-bottom:8px;color:#38e1ff;}
+  .honest{border-left:3px solid #ffc247;padding-left:14px;color:#f0dcae;margin-top:10px;font-size:14px;}
+  .contact{margin-top:34px;padding:20px;border:1px solid #1d3050;border-radius:12px;background:#0b1322;text-align:center;}
+  .contact b{color:#5dffa0;}
+  a{color:#38e1ff;text-decoration:underline;}
+  footer{margin-top:40px;padding-top:20px;border-top:1px solid #1d3050;font-size:12px;color:#8296b0;text-align:center;}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <p class="kicker">À vendre · Application web statique</p>
+    <h1>Market Hours Radar</h1>
+    <p class="price">4 500 € · 4 900 $ USD · Négociable à partir de 2 500 €</p>
+    <p style="color:#8296b0;font-size:14px;margin-top:4px;">Radar des séances boursières mondiales — 12 places — Deux cadrans SVG centrés sur l'heure de Paris</p>
+  </div>
+
+  <div class="demo">
+    <a href="https://samveilleur.github.io/market-hour-radar/" target="_blank" rel="noopener">
+      ▶ Voir la démo en direct
+    </a>
+    <div class="qr">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https%3A%2F%2Fmarket-hours-radar-9986usim39q.qoder.website" alt="QR code démo" style="width:160px;height:160px;border-radius:8px;background:#070c17;padding:4px;border:1px solid #1d3050;">
+      <p>Scannez pour ouvrir la démo sur votre téléphone</p>
+    </div>
+  </div>
+
+  <section>
+    <h2><span></span>C'est quoi ?</h2>
+    <p>Application web 100 % statique qui affiche en temps réel les séances de <strong>12 places boursières mondiales</strong> sur deux cadrans SVG (matin / après-midi) centrés sur l'heure de Paris. Statuts ouvert / pré-marché / fermé recalculés chaque seconde, avec survol et clic pour voir l'heure locale, la séance et le volume.</p>
+    <ul>
+      <li>Sydney, Tokyo, Shanghai, Hong Kong, Singapour, Moscou, Paris, Francfort, Londres, NASDAQ, NYSE, pré-marché US</li>
+      <li>Deux cadrans interactifs (minuit–midi / midi–minuit)</li>
+      <li>Modes En direct / Hiver / Été pour prévisualiser les changements d'heure</li>
+      <li>Fuseau Paris ou heure de l'appareil, géré nativement via <code>Intl.DateTimeFormat</code></li>
+      <li>Épaisseur des anneaux proportionnelle au volume (échelle logarithmique)</li>
+      <li>Self-test intégré (<code>?selftest</code>), tooltips, responsive</li>
+    </ul>
+  </section>
+
+  <div class="grid">
+    <div class="card">
+      <h3>📦 Inclus dans la vente</h3>
+      <ul>
+        <li>Code source complet (index.html, styles.css, app.js, time.js)</li>
+        <li>ICO, logo, captures d'écran</li>
+        <li>Dashboard de suivi des consultations et des annonces</li>
+        <li>Emballage Android Capacitor prêt (dossier <code>android/</code> généré)</li>
+        <li>Politique de confidentialité</li>
+        <li>Transfert en 10 minutes (pas de domaine, pas de compte social inclus)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>💡 Idées de monétisation</h3>
+      <ul>
+        <li>Abonnement premium : alertes d'ouverture/fermeture, watchlists</li>
+        <li>Affiliation courtiers (eToro, DEGIRO, Trade Republic…)</li>
+        <li>Bannières fintech / néo-courtiers</li>
+        <li>API payante ou widget embarquable</li>
+        <li>SEO : pages par place boursière → Adsense / affiliation</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="honest">
+    <strong>Points d'honnêteté :</strong> les volumes affichés sont des données indicatives (ETF de référence, pas le turnover officiel de chaque bourse), et les jours fériés ne sont pas retirés du calendrier. Deux chantiers rapides pour le repreneur.
+  </div>
+
+  <div class="contact">
+    <h2><span></span>Acheter maintenant — Stripe</h2>
+    <p>Prix : <strong>4 500 €</strong> (négociable à partir de 2 500 €). Paiement sécurisé par carte bancaire via Stripe.</p>
+
+    <!-- Remplacez ci-dessous par votre lien de paiement Stripe (Payment Link) -->
+    <a id="stripe-buy" href="#" class="btn" style="background:linear-gradient(135deg,#008cff,#004ecc);border-color:#008cff;color:#ffffff;">💳 Payer avec Stripe — 4 500 €</a>
+
+    <p class="note" style="margin-top:12px;">
+      🔧 <b>Configuration Stripe (2 minutes) :</b><br>
+      1. Connectez-vous à <a href="https://dashboard.stripe.com/pay-links" target="_blank" rel="noopener">Stripe Dashboard → Payment Links</a><br>
+      2. Cliquez sur <b>+ Créer un lien de paiement</b><br>
+      3. Produit : « Market Hours Radar » — Prix : 4 500 € — Quantité : 1<br>
+      4. Copiez le lien généré et collez-le à la place de <code>href="#"</code> sur le bouton ci-dessus (fichier <code>vente/index.html</code>)<br>
+      5. Une fois le paiement reçu, envoyez le code source ZIP à l'acheteur.
+    </p>
+  </div>
+
+  <div class="contact">
+    <h2><span></span>Contact & achat direct</h2>
+    <p><b>bentourqisam@gmail.com</b></p>
+    <p style="font-size:13px;color:#8296b0;margin-top:6px;">Paiement sécurisé via escrow (Escrow.com) possible. Inspection 7 jours.</p>
+  </div>
+
+  <footer>
+    Market Hours Radar · Pre-revenue · Trafic : 50 PV / 33 UV sur 30 j (instantané Qoder Sites, couverture partielle) · Annonces en cours sur SideProjectors, SellMicroSaaS, AcquireBase.
+  </footer>
+
+</div>
+
+  <script>
+    const buyBtn = document.getElementById('stripe-buy');
+    if (buyBtn && buyBtn.getAttribute('href') === '#') {
+      buyBtn.style.opacity = '0.6';
+      buyBtn.style.pointerEvents = 'none';
+      buyBtn.title = 'Configurez d\'abord votre lien Stripe Payment Link dans vente/index.html';
+    }
+  </script>
+</body>
+</html>
